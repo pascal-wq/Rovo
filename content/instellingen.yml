@@ -1,0 +1,39 @@
+# Algemene gegevens van Rovo-sound. Deze worden op elke pagina gebruikt
+# (header, footer, contactpagina en zoekmachine-informatie).
+bedrijfsnaam: Rovo-sound
+slogan: Geluidssystemen & live-geluidstechniek in Hasselt
+omschrijving: >-
+  Rovo-sound verzorgt professionele geluidssystemen en geluidstechniek voor
+  muzikanten, bands, horeca, evenementen en bruiloften. Betaalbaar,
+  betrouwbaar en afspraak is afspraak.
+eigenaar: Robin Vos
+telefoon: 06 - 15 50 92 05
+telefoon_internationaal: "+31615509205"
+email: info@rovo-sound.nl
+adres:
+  straat: Het Kerspel 18
+  postcode: 8061 BE
+  plaats: Hasselt
+  provincie: Overijssel
+kvk: "63444453"
+facebook: https://www.facebook.com/rovosound
+website_url: https://rovo-sound.nl
+# Eigen domeinnaam voor GitHub Pages (laat leeg als de site nog op github.io staat).
+eigen_domein: ""
+# Vul hier een Formspree- of ander formulier-adres in om het contactformulier
+# server-side te laten verzenden. Leeg = het formulier opent het e-mailprogramma.
+formulier_endpoint: ""
+kaart_embed_url: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.609532335756!2d6.097829515810242!3d52.59475247982836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c87429efffbe55%3A0x89e6920f486c994e!2sHet%20Kerspel%2018%2C%208061%20BE%20Hasselt!5e0!3m2!1snl!2snl!4v1569835514997!5m2!1snl!2snl
+deelafbeelding: /assets/img/og-image.jpg
+footer_tekst: >-
+  Professionele geluidssystemen en live-geluidstechniek voor muzikanten,
+  bands, horeca, evenementen en bruiloften. Betaalbaar voor iedereen, en
+  afspraak is afspraak.
+cta:
+  eyebrow: Nieuwsgierig wat Rovo-sound voor jou doet?
+  titel: Laten we jouw evenement laten klinken zoals het hoort.
+  tekst: >-
+    We gaan graag met je in gesprek over de mogelijkheden om jouw optreden,
+    feest of evenement geluidstechnisch tot een groot succes te maken.
+    Vrijblijvend en zonder verrassingen achteraf.
+  knop: Vraag een offerte aan
