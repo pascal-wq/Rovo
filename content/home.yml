@@ -1,0 +1,138 @@
+seo:
+  titel: Rovo-sound | Geluidssystemen & live-geluidstechniek in Hasselt
+  omschrijving: >-
+    Rovo-sound verzorgt professionele geluidssystemen en geluidstechniek voor
+    muzikanten, bands, horeca, evenementen en bruiloften. Betaalbaar,
+    betrouwbaar en afspraak is afspraak.
+hero:
+  eyebrow: Geluidstechniek uit Hasselt (Overijssel)
+  titel: Goed geluid,
+  titel_accent: zonder gedoe.
+  tekst: >-
+    Rovo-sound verzorgt professionele geluidssystemen en live-geluidstechniek
+    voor muzikanten, bands, horeca, evenementen en bruiloften. Betaalbaar voor
+    iedereen, ook voor beginnende bands.
+  knop_primair: Vraag een offerte aan
+  knop_secundair: Bekijk ons materiaal
+  afbeelding: /assets/img/hero.webp
+  afbeelding_alt: Podium met drumstel, microfoons en speakers, klaar voor een optreden
+  tags:
+    - Muzikanten
+    - Bands
+    - Horeca & cafés
+    - Evenementen
+    - Bruiloften
+    - Theater
+usps:
+  - icoon: shield
+    titel: Afspraak is afspraak
+    tekst: Geen bijkomende kosten achteraf. Wat we afspreken, is wat je betaalt.
+  - icoon: euro
+    titel: Betaalbaar voor iedereen
+    tekst: Ook voor beginnende bands en muzikanten met een klein budget.
+  - icoon: speaker
+    titel: Professioneel materiaal
+    tekst: Electro-Voice, Behringer X32, Shure, Sennheiser, AKG, Rode en Radial.
+  - icoon: user
+    titel: Eén aanspreekpunt
+    tekst: Persoonlijk contact van aanvraag tot afbouw, met passie voor muziek en techniek.
+intro:
+  eyebrow: Rovo-sound geluidssystemen
+  titel: "Een jong en dynamisch bedrijf met één doel: jouw muziek laten klinken zoals jij het bedoelt."
+  lead: >-
+    Niets is zo vervelend als je met je band mooie muziek speelt, maar het in
+    de zaal niet overkomt zoals je wilt. Daar doen wij wat aan.
+  tekst: >-
+    Onze doelgroepen zijn muzikanten, bands, horeca, cafés, evenementen en
+    bruiloften. Uiteraard is in overleg bijna alles mogelijk. We blijven
+    voortdurend investeren in ons materiaal en onze kennis, zodat we je steeds
+    meer kunnen bieden.
+  knop: Meer over ons
+  afbeelding: /assets/img/band-podium.webp
+  afbeelding_alt: Band speelt op een buitenpodium voor een groot publiek
+  bijschrift: "Live op het podium: band, monitors en publiek in balans."
+diensten_blok:
+  eyebrow: Diensten
+  titel: Waar we je mee helpen
+  tekst: >-
+    Van een akoestische set in een café tot een complete band op een
+    buitenpodium. We leveren het geluidssysteem, bouwen op, mixen en bouwen
+    weer af.
+materiaal_blok:
+  eyebrow: Materiaal
+  titel: Professionele apparatuur van A-merken
+  tekst: >-
+    We werken met een actief Electro-Voice ETX P.A.-systeem, Electro-Voice ZLX
+    floormonitors, een digitaal Behringer X32 Compact mengpaneel met S16
+    stagebox en een uitgebreide microfoonset van Shure, Sennheiser, AKG en Rode.
+  punten:
+    - label: P.A.-systeem
+      tekst: Electro-Voice ETX-18SP subwoofers en ETX-12P tops
+    - label: Floormonitors
+      tekst: Electro-Voice ZLX-15P en ZLX-12P
+    - label: Mengpaneel
+      tekst: Behringer X32 Compact met S16 digitale stagebox
+    - label: Microfoons & DI's
+      tekst: Shure, Sennheiser, AKG, Rode, Radial en BSS
+  slot: Eigen monitormix maken met je smartphone of tablet? Dat kan.
+  knop: Bekijk al het materiaal
+  afbeelding: /assets/img/band-muziektent.webp
+  afbeelding_alt: Band met drums, gitaar en keyboards speelt in een muziektent met publiek
+  bijschrift: Onze set in actie op een buitenpodium.
+werkwijze:
+  eyebrow: Hoe het werkt
+  titel: Van aanvraag tot afbouw in vier stappen
+  tekst: Duidelijk, persoonlijk en zonder verrassingen. Zo pakken we elk optreden aan.
+  stappen:
+    - titel: Aanvraag
+      tekst: "Vertel ons wat je gaat doen: soort optreden, datum, locatie en bezetting. Bellen of mailen mag ook."
+    - titel: Advies & offerte
+      tekst: We denken mee over wat er echt nodig is en sturen een duidelijke offerte. Afspraak is afspraak.
+    - titel: Opbouw & soundcheck
+      tekst: We bouwen op tijd op, lijnen het systeem in en doen een goede soundcheck met de band.
+    - titel: Optreden & afbouw
+      tekst: Tijdens het optreden verzorgen we de mix. Na afloop bouwen we netjes af. Jij hoeft nergens aan te denken.
+over_blok:
+  eyebrow: Over ons
+  titel: Ontstaan uit pure passie voor muziek en techniek
+  tekst: >-
+    Rovo-sound is het bedrijf van Robin Vos. Na jaren piano- en gitaarles
+    bleek zijn passie in de techniek te liggen: alles wat erbij komt kijken om
+    een live optreden goed te laten klinken.
+  quote: Afspraak is afspraak, zonder bijkomende kosten.
+  quote_auteur: Robin Vos, Rovo-sound
+  knop: Lees ons verhaal
+  afbeelding: /assets/img/publiek-muziektent.webp
+  afbeelding_alt: Publiek bij een muziektent op een zonnige dag
+  bijschrift: Een vol plein, en overal goed geluid.
+faq:
+  eyebrow: Veelgestelde vragen
+  titel: Goed om te weten
+  vragen:
+    - vraag: Wat kost het huren van een geluidssysteem met technicus?
+      antwoord: >-
+        Elke aanvraag is maatwerk: het hangt af van de bezetting, de locatie,
+        de duur en wat er precies nodig is. Vraag vrijblijvend een offerte aan.
+        Je krijgt een duidelijke prijs en daar houden we ons aan, zonder
+        bijkomende kosten.
+    - vraag: Voor welke grootte van optredens is Rovo-sound geschikt?
+      antwoord: >-
+        Ons Electro-Voice ETX-systeem is geschikt voor cafés, zalen, feesten en
+        buitenpodia. Twijfel je of het past bij jouw evenement? Neem contact
+        op, dan kijken we samen wat er nodig is. In overleg is bijna alles
+        mogelijk.
+    - vraag: Blijft er een geluidstechnicus bij tijdens het optreden?
+      antwoord: >-
+        Ja. We bouwen niet alleen op, maar verzorgen ook de soundcheck en de
+        mix tijdens het optreden. Zo klinkt het in de zaal zoals de band het
+        bedoelt.
+    - vraag: Kunnen muzikanten hun eigen monitormix maken?
+      antwoord: >-
+        Ja. Ons Behringer X32 Compact mengpaneel werkt met een digitale
+        stagebox, waardoor iedere muzikant via een smartphone of tablet zijn of
+        haar eigen monitormix kan instellen.
+    - vraag: In welke regio werken jullie?
+      antwoord: >-
+        We zijn gevestigd in Hasselt (Overijssel), vlak bij Zwolle, en werken
+        in de hele regio. Een optreden verder weg? Overleg gerust, meestal is
+        er meer mogelijk dan je denkt.

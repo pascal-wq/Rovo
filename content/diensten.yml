@@ -1,0 +1,110 @@
+seo:
+  titel: Diensten | Geluid voor bands, horeca, evenementen & bruiloften | Rovo-sound
+  omschrijving: >-
+    Geluidssysteem huren inclusief geluidstechnicus: voor muzikanten, bands,
+    horeca en cafés, evenementen, feesten, bruiloften en theater. In overleg
+    is bijna alles mogelijk.
+intro:
+  titel: Diensten
+  lead: >-
+    Een compleet geluidssysteem inclusief opbouw, soundcheck, mix en afbouw.
+    Voor muzikanten, bands, horeca, evenementen en bruiloften. En in overleg
+    is bijna alles mogelijk.
+diensten:
+  - id: bands
+    icoon: music
+    titel: Muzikanten & bands
+    tekst: >-
+      Van singer-songwriter tot volledige band: wij leveren de P.A., monitors
+      en microfoons en verzorgen de mix tijdens je optreden.
+    punten:
+      - Actief Electro-Voice P.A.-systeem met subs en tops
+      - Floormonitors of eigen monitormix via smartphone/tablet
+      - Complete microfoonset voor drums, versterkers, zang en akoestisch
+      - Geluidstechnicus voor soundcheck en optreden
+    op_homepage: true
+    korte_tekst: P.A., monitors, microfoons en een geluidstechnicus die jouw mix verzorgt tijdens het optreden.
+  - id: horeca
+    icoon: glass
+    titel: Horeca & cafés
+    tekst: >-
+      Live muziek in je café, kroeg of restaurant? Wij zorgen dat het lekker
+      klinkt voor je gasten en dat de band zichzelf goed hoort.
+    punten:
+      - Systeem afgestemd op de ruimte en het aantal gasten
+      - Volume onder controle, ook in kleinere zaken
+      - Snelle en nette opbouw en afbouw
+      - Ook voor terugkerende live-avonden
+    op_homepage: true
+    korte_tekst: Live muziek in je zaak? Wij zorgen dat het lekker klinkt voor je gasten én voor de band.
+  - id: evenementen
+    icoon: party
+    titel: Evenementen & feesten
+    tekst: >-
+      Dorpsfeest, bedrijfsfeest, buitenpodium of festivalletje: geluid dat tot
+      achterin het plein helder overkomt.
+    punten:
+      - Geschikt voor binnen- en buitenlocaties
+      - Meerdere acts op één dag? Wij regelen de wissels
+      - Spraak en muziek door één systeem
+      - Technicus de hele dag aanwezig
+    op_homepage: true
+    korte_tekst: "Buitenpodia, dorpsfeesten en bedrijfsevenementen: geluid dat tot achterin overkomt."
+  - id: bruiloften
+    icoon: heart
+    titel: Bruiloften
+    tekst: >-
+      Van de ceremonie tot het feest: goede spraakverstaanbaarheid bij de
+      geloften, sfeer tijdens het diner en volume als de dansvloer opengaat.
+    punten:
+      - Draadloze of bedrade microfoons voor de ceremonie en speeches
+      - Achtergrondmuziek tijdens receptie en diner
+      - Geluid voor live band of DJ op het feest
+      - Eén aanspreekpunt voor de hele dag
+    op_homepage: true
+    korte_tekst: Spraakverstaanbaarheid bij de ceremonie, sfeer bij het diner en volume op het feest.
+  - id: theater
+    icoon: theater
+    titel: Theater & voorstellingen
+    tekst: >-
+      Een passie van ons: theatertechniek. Voor toneel, cabaret en
+      kleinschalige voorstellingen zorgen we voor helder, natuurlijk geluid.
+    punten:
+      - Spraakverstaanbaarheid voorop
+      - Muziek- en geluidseffecten op cue
+      - Rustige, onopvallende opstelling
+      - Ervaring met theatertechniek en trainingen
+    op_homepage: false
+    korte_tekst: ""
+  - id: overig
+    icoon: speaker
+    titel: Iets anders?
+    tekst: >-
+      Een presentatie, een kerkdienst, een sportevenement of een jubileum?
+      Uiteraard is in overleg bijna alles mogelijk.
+    punten:
+      - Alleen apparatuur of inclusief technicus
+      - Advies over wat je écht nodig hebt
+      - Eerlijke prijs, afspraak is afspraak
+      - Neem contact op en we denken mee
+    op_homepage: false
+    korte_tekst: ""
+verwachten:
+  eyebrow: Wat je kunt verwachten
+  titel: Alles geregeld, zodat jij je op de muziek kunt richten
+  items:
+    - label: Advies
+      titel: We denken mee over wat er nodig is
+      tekst: Niet te veel en niet te weinig. Passend bij de locatie, de bezetting en je budget.
+    - label: Opbouw
+      titel: Op tijd opgebouwd en ingelijnd
+      tekst: We komen ruim van tevoren, zodat er genoeg tijd is voor een goede soundcheck.
+    - label: Optreden
+      titel: Een technicus achter de mixer
+      tekst: Tijdens het optreden houden we de mix in de gaten, voor de zaal én voor de monitors.
+    - label: Afbouw
+      titel: Netjes afgebouwd
+      tekst: Na afloop bouwen we alles weer af en laten we de locatie schoon achter.
+  afbeelding: /assets/img/podium-opbouw.webp
+  afbeelding_alt: Opbouw van keyboards, monitors en kabels op een podium voor een optreden
+  bijschrift: Opbouw op het podium, kort voor de soundcheck.

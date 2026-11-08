@@ -1,0 +1,156 @@
+seo:
+  titel: Materiaal | Electro-Voice P.A., Behringer X32, Shure & Sennheiser | Rovo-sound
+  omschrijving: >-
+    Bekijk het materiaal van Rovo-sound: Electro-Voice ETX P.A.-systeem, ZLX
+    floormonitors, Behringer X32 Compact met S16 stagebox en microfoons van
+    Shure, Sennheiser, AKG, Rode, Radial en BSS.
+intro:
+  titel: Materiaal
+  lead: >-
+    Professionele apparatuur van A-merken, goed onderhouden en klaar voor jouw
+    optreden. We blijven voortdurend investeren in ons materiaal.
+categorieen:
+  - id: pa
+    menunaam: P.A.-systeem
+    eyebrow: P.A.-systeem
+    titel: Electro-Voice ETX
+    tekst: >-
+      Actief P.A.-systeem met krachtige subwoofers en heldere tops. Geschikt
+      voor cafés, zalen, feesten en buitenpodia.
+    afbeelding: /assets/img/pa-systeem.webp
+    afbeelding_alt: Electro-Voice ETX P.A.-speakers op een podium
+    groepen:
+      - titel: ""
+        items:
+          - merk: Electro-Voice
+            naam: ETX-18SP
+            omschrijving: Actieve 18-inch subwoofer voor een strak en diep laag.
+          - merk: Electro-Voice
+            naam: ETX-12P
+            omschrijving: Actieve 12-inch fullrange top met ingebouwde DSP.
+    opmerking: ""
+  - id: monitors
+    menunaam: Floormonitors
+    eyebrow: Floormonitors
+    titel: Electro-Voice ZLX
+    tekst: >-
+      Actieve floormonitors, zodat iedere muzikant zichzelf en de rest van de
+      band goed hoort op het podium.
+    afbeelding: /assets/img/floormonitors.webp
+    afbeelding_alt: Electro-Voice ZLX floormonitors op een podium
+    groepen:
+      - titel: ""
+        items:
+          - merk: Electro-Voice
+            naam: ZLX-15P
+            omschrijving: Actieve 15-inch monitor met veel headroom.
+          - merk: Electro-Voice
+            naam: ZLX-12P
+            omschrijving: Compacte actieve 12-inch monitor.
+    opmerking: ""
+  - id: mengpaneel
+    menunaam: Mengpaneel
+    eyebrow: Mengpaneel
+    titel: Behringer X32
+    tekst: >-
+      Digitaal mengpaneel met digitale stagebox. Eén CAT5-kabel tussen podium
+      en mixer, en alle instellingen zijn op te slaan en terug te halen.
+    afbeelding: /assets/img/mengpaneel.webp
+    afbeelding_alt: Behringer X32 Compact digitaal mengpaneel
+    groepen:
+      - titel: ""
+        items:
+          - merk: Behringer
+            naam: X32 Compact
+            omschrijving: Digitale 40-kanaals mixer met motorfaders en effecten.
+          - merk: Behringer
+            naam: S16
+            omschrijving: Digitale stagebox met 16 microfooningangen en 8 uitgangen.
+          - merk: Verbinding
+            naam: CAT5
+            omschrijving: Eén netwerkkabel van stagebox naar mixer. Minder kabels, meer overzicht.
+    opmerking: >-
+      **Eigen monitormix.** Je kunt met je smartphone of tablet je eigen
+      monitormix maken, zodat je precies hoort wat jij wilt horen.
+  - id: microfoons
+    menunaam: Microfoons & DI's
+    eyebrow: Microfoons & DI's
+    titel: Shure, Sennheiser, AKG, Rode, Radial & BSS
+    tekst: >-
+      Een complete microfoonset voor drums, versterkers, blazers, akoestische
+      instrumenten en zang, plus professionele DI's voor bas, keyboards en
+      akoestische gitaar.
+    afbeelding: ""
+    afbeelding_alt: ""
+    groepen:
+      - titel: Instrumentmicrofoons
+        items:
+          - merk: AKG
+            naam: D112
+            omschrijving: Instrumentmicrofoon voor bassdrum en basversterker.
+          - merk: Rode
+            naam: NT5
+            omschrijving: Condensator-instrumentmicrofoon voor overheads en akoestisch.
+          - merk: Sennheiser
+            naam: MD 421
+            omschrijving: Klassieke instrumentmicrofoon voor toms, gitaar en blazers.
+          - merk: Sennheiser
+            naam: e 904
+            omschrijving: Compacte instrumentmicrofoon voor toms en snare.
+          - merk: Sennheiser
+            naam: e 906
+            omschrijving: Instrumentmicrofoon voor gitaarversterkers.
+          - merk: Shure
+            naam: Beta 91A
+            omschrijving: Grensvlakmicrofoon voor in de bassdrum.
+          - merk: Shure
+            naam: Beta 52A
+            omschrijving: Bassdrum- en basmicrofoon met veel punch.
+          - merk: Shure
+            naam: SM57
+            omschrijving: De allrounder voor snare en gitaarversterkers.
+      - titel: Zangmicrofoons
+        items:
+          - merk: Sennheiser
+            naam: e 945
+            omschrijving: Supercardioïde zangmicrofoon met veel definitie.
+          - merk: Shure
+            naam: SM58
+            omschrijving: De wereldstandaard voor live zang.
+          - merk: Shure
+            naam: Beta 58A
+            omschrijving: Heldere supercardioïde zangmicrofoon.
+          - merk: Shure
+            naam: KSM8
+            omschrijving: High-end zangmicrofoon met dubbel membraan.
+      - titel: DI's
+        items:
+          - merk: Radial
+            naam: J48
+            omschrijving: Actieve DI voor bas, keyboards en akoestische gitaar.
+          - merk: BSS
+            naam: AR-133
+            omschrijving: Actieve DI, een studio- en podiumklassieker.
+    opmerking: ""
+  - id: algemeen
+    menunaam: Standaards & kabels
+    eyebrow: Algemeen
+    titel: Standaards & kabels
+    tekst: >-
+      Ook de details doen ertoe. Daarom werken we alleen met degelijke
+      standaards en betrouwbare bekabeling.
+    afbeelding: ""
+    afbeelding_alt: ""
+    groepen:
+      - titel: ""
+        items:
+          - merk: K&M
+            naam: Standaards
+            omschrijving: Alle microfoon- en speakerstandaards zijn van König & Meyer.
+          - merk: Cordial / Procab
+            naam: XLR-kabels
+            omschrijving: Alle XLR-kabels zijn van Cordial of Procab.
+    opmerking: ""
+    sfeerfoto: /assets/img/podium-opbouw.webp
+    sfeerfoto_alt: Podium met keyboards, monitors en kabels tijdens de opbouw
+    sfeerfoto_bijschrift: Opbouw op locatie.

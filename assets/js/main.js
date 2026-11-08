@@ -59,6 +59,8 @@
   var form = document.getElementById("contact-form");
   if (form) {
     var status = document.getElementById("form-status");
+    var toEmail = form.getAttribute("data-email") || "info@rovo-sound.nl";
+    var phone = form.getAttribute("data-phone") || "";
     var showStatus = function (type, msg) {
       status.className = "form-status is-visible " + type;
       status.textContent = msg;
@@ -86,7 +88,7 @@
           form.reset();
           showStatus("ok", "Bedankt! Je bericht is verzonden. We nemen zo snel mogelijk contact met je op.");
         }).catch(function () {
-          showStatus("err", "Verzenden is niet gelukt. Bel ons op 06 - 15 50 92 05 of mail naar info@rovo-sound.nl.");
+          showStatus("err", "Verzenden is niet gelukt. Bel ons" + (phone ? " op " + phone : "") + " of mail naar " + toEmail + ".");
         }).finally(function () { btn.disabled = false; });
         return;
       }
@@ -102,9 +104,9 @@
         data.bericht
       ];
       var subject = "Aanvraag via rovo-sound.nl" + (data.soort ? " - " + data.soort : "");
-      window.location.href = "mailto:info@rovo-sound.nl?subject=" + encodeURIComponent(subject) +
+      window.location.href = "mailto:" + toEmail + "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(lines.join("\n"));
-      showStatus("ok", "Je e-mailprogramma wordt geopend met je bericht. Lukt dat niet? Mail dan direct naar info@rovo-sound.nl.");
+      showStatus("ok", "Je e-mailprogramma wordt geopend met je bericht. Lukt dat niet? Mail dan direct naar " + toEmail + ".");
     });
   }
 })();

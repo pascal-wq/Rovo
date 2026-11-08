@@ -1,0 +1,378 @@
+# Configuratie voor Pages CMS (https://app.pagescms.org).
+# Hiermee kan de inhoud van de site via een beheerscherm worden aangepast.
+
+media:
+  input: assets/img
+  output: /assets/img
+  label: Foto's
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+settings:
+  content:
+    merge: true
+  commit:
+    templates:
+      create: "Nieuw: {filename} (via beheer)"
+      update: "Aangepast: {filename} (via beheer)"
+      delete: "Verwijderd: {filename} (via beheer)"
+      rename: "Hernoemd: {oldFilename} -> {newFilename} (via beheer)"
+
+components:
+  afbeelding:
+    type: image
+    label: Foto
+    options:
+      extensions: [jpg, jpeg, png, webp]
+  icoon:
+    type: select
+    label: Icoon
+    options:
+      values:
+        - { name: shield, label: Schild (betrouwbaar) }
+        - { name: euro, label: Euro (prijs) }
+        - { name: speaker, label: Speaker }
+        - { name: user, label: Persoon }
+        - { name: music, label: Muzieknoten }
+        - { name: glass, label: Glas (horeca) }
+        - { name: party, label: Feest }
+        - { name: heart, label: Hart (bruiloft) }
+        - { name: theater, label: Theatermasker }
+        - { name: mixer, label: Mengpaneel }
+        - { name: mic, label: Microfoon }
+        - { name: clock, label: Klok }
+        - { name: pin, label: Locatiepin }
+        - { name: star, label: Ster }
+        - { name: truck, label: Vrachtwagen }
+        - { name: check, label: Vinkje }
+        - { name: info, label: Info }
+  seo:
+    type: object
+    label: Zoekmachines (Google)
+    fields:
+      - { name: titel, label: Paginatitel in Google, type: string, required: true, description: "Ongeveer 60 tekens." }
+      - { name: omschrijving, label: Omschrijving in Google, type: text, required: true, description: "Ongeveer 150 tekens." }
+
+content:
+  - name: instellingen
+    label: Bedrijfsgegevens
+    type: file
+    path: content/instellingen.yml
+    format: yaml
+    fields:
+      - { name: bedrijfsnaam, label: Bedrijfsnaam, type: string, required: true }
+      - { name: slogan, label: Slogan, type: string }
+      - { name: omschrijving, label: Korte omschrijving van het bedrijf, type: text, description: "Wordt gebruikt voor Google en social media." }
+      - { name: eigenaar, label: Naam eigenaar, type: string }
+      - { name: telefoon, label: Telefoonnummer (zoals op de site getoond), type: string, required: true }
+      - { name: telefoon_internationaal, label: Telefoonnummer internationaal, type: string, required: true, description: "Voor de bel-knop, bijvoorbeeld +31612345678", pattern: { regex: "^\\+[0-9]{8,15}$", message: "Gebruik het formaat +31612345678 (zonder spaties)" } }
+      - { name: email, label: E-mailadres, type: string, required: true }
+      - name: adres
+        label: Adres
+        type: object
+        fields:
+          - { name: straat, label: Straat en huisnummer, type: string }
+          - { name: postcode, label: Postcode, type: string }
+          - { name: plaats, label: Plaats, type: string }
+          - { name: provincie, label: Provincie, type: string }
+      - { name: kvk, label: KVK-nummer, type: string }
+      - { name: facebook, label: Facebook-pagina (volledige link), type: string }
+      - { name: website_url, label: Websiteadres, type: string, description: "Bijvoorbeeld https://rovo-sound.nl. Wordt gebruikt voor Google en de sitemap." }
+      - { name: eigen_domein, label: Eigen domeinnaam voor GitHub Pages, type: string, description: "Alleen invullen als de site op GitHub Pages draait met een eigen domein, bijvoorbeeld rovo-sound.nl." }
+      - { name: formulier_endpoint, label: Formulier-verzendadres, type: string, description: "Leeg laten = formulier opent het e-mailprogramma van de bezoeker. Anders bijvoorbeeld een Formspree-adres." }
+      - { name: kaart_embed_url, label: Google Maps insluitlink, type: string, description: "Google Maps > Delen > Kaart insluiten > kopieer alleen het adres uit src=\"...\"" }
+      - { name: deelafbeelding, label: Afbeelding voor social media, component: afbeelding, description: "Wordt getoond als de site op Facebook of WhatsApp wordt gedeeld (liefst 1200 x 630 pixels)." }
+      - { name: footer_tekst, label: Tekst in de voettekst, type: text }
+      - name: cta
+        label: Oproep onderaan de pagina's
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: text }
+          - { name: knop, label: Tekst op de knop, type: string }
+
+  - name: home
+    label: Homepage
+    type: file
+    path: content/home.yml
+    format: yaml
+    fields:
+      - { name: seo, component: seo }
+      - name: hero
+        label: Bovenste blok (hero)
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel (wit), type: string, required: true }
+          - { name: titel_accent, label: Titel vervolg (rood), type: string }
+          - { name: tekst, label: Tekst, type: text, required: true }
+          - { name: knop_primair, label: Rode knop, type: string }
+          - { name: knop_secundair, label: Tweede knop, type: string }
+          - { name: afbeelding, label: Achtergrondfoto, component: afbeelding, description: "Liefst een brede, liggende foto (minimaal 1600 pixels breed)." }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string, description: "Voor blinden en slechtzienden en voor Google." }
+          - { name: tags, label: Doelgroepen (labels), type: string, list: true }
+      - name: usps
+        label: Vier sterke punten
+        type: object
+        list: { min: 1, max: 4, collapsible: { collapsed: true, summary: "{titel}" } }
+        fields:
+          - { name: icoon, component: icoon }
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: tekst, label: Tekst, type: string }
+      - name: intro
+        label: Introductieblok
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: lead, label: Inleidende zin, type: text }
+          - { name: tekst, label: Tekst, type: rich-text, options: { media: false } }
+          - { name: knop, label: Tekst op de knop, type: string }
+          - { name: afbeelding, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+          - { name: bijschrift, label: Bijschrift onder de foto, type: string }
+      - name: diensten_blok
+        label: Dienstenblok
+        type: object
+        description: "De kaartjes zelf komen van de pagina Diensten (vinkje 'Tonen op homepage')."
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: text }
+      - name: materiaal_blok
+        label: Materiaalblok
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: rich-text, options: { media: false } }
+          - name: punten
+            label: Opsomming
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{label}" } }
+            fields:
+              - { name: label, label: Dikgedrukt, type: string }
+              - { name: tekst, label: Tekst, type: string }
+          - { name: slot, label: Afsluitende zin, type: string }
+          - { name: knop, label: Tekst op de knop, type: string }
+          - { name: afbeelding, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+          - { name: bijschrift, label: Bijschrift onder de foto, type: string }
+      - name: werkwijze
+        label: Werkwijze (stappen)
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: text }
+          - name: stappen
+            label: Stappen
+            type: object
+            list: { min: 2, max: 6, collapsible: { collapsed: true, summary: "{index}. {titel}" } }
+            fields:
+              - { name: titel, label: Titel, type: string, required: true }
+              - { name: tekst, label: Tekst, type: text }
+      - name: over_blok
+        label: Over-ons-blok
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: rich-text, options: { media: false } }
+          - { name: quote, label: Citaat, type: string }
+          - { name: quote_auteur, label: Naam bij het citaat, type: string }
+          - { name: knop, label: Tekst op de knop, type: string }
+          - { name: afbeelding, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+          - { name: bijschrift, label: Bijschrift onder de foto, type: string }
+      - name: faq
+        label: Veelgestelde vragen
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - name: vragen
+            label: Vragen
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{vraag}" } }
+            fields:
+              - { name: vraag, label: Vraag, type: string, required: true }
+              - { name: antwoord, label: Antwoord, type: rich-text, options: { media: false } }
+
+  - name: diensten
+    label: Diensten
+    type: file
+    path: content/diensten.yml
+    format: yaml
+    fields:
+      - { name: seo, component: seo }
+      - name: intro
+        label: Paginakop
+        type: object
+        fields:
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: lead, label: Inleiding, type: text }
+      - name: diensten
+        label: Diensten
+        type: object
+        list: { min: 1, collapsible: { collapsed: true, summary: "{titel}" } }
+        fields:
+          - { name: id, label: Interne naam (zonder spaties), type: string, required: true, pattern: { regex: "^[a-z0-9-]+$", message: "Alleen kleine letters, cijfers en streepjes" }, description: "Wordt gebruikt in de link, bijvoorbeeld 'bruiloften'." }
+          - { name: icoon, component: icoon }
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: tekst, label: Tekst, type: text }
+          - { name: punten, label: Opsomming, type: string, list: true }
+          - { name: op_homepage, label: Tonen op homepage, type: boolean, description: "Maximaal vier diensten passen mooi op de homepage." }
+          - { name: korte_tekst, label: Korte tekst voor de homepage, type: string }
+      - name: verwachten
+        label: Blok 'Wat je kunt verwachten'
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - name: items
+            label: Punten
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{label}: {titel}" } }
+            fields:
+              - { name: label, label: Label (rood), type: string }
+              - { name: titel, label: Titel, type: string }
+              - { name: tekst, label: Tekst, type: text }
+          - { name: afbeelding, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+          - { name: bijschrift, label: Bijschrift onder de foto, type: string }
+
+  - name: materiaal
+    label: Materiaal
+    type: file
+    path: content/materiaal.yml
+    format: yaml
+    fields:
+      - { name: seo, component: seo }
+      - name: intro
+        label: Paginakop
+        type: object
+        fields:
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: lead, label: Inleiding, type: text }
+      - name: categorieen
+        label: Categorieën
+        type: object
+        list: { min: 1, collapsible: { collapsed: true, summary: "{titel}" } }
+        fields:
+          - { name: id, label: Interne naam (zonder spaties), type: string, required: true, pattern: { regex: "^[a-z0-9-]+$", message: "Alleen kleine letters, cijfers en streepjes" } }
+          - { name: menunaam, label: Naam in het snelmenu, type: string, required: true }
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: tekst, label: Tekst, type: rich-text, options: { media: false } }
+          - { name: afbeelding, label: Foto van het materiaal, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+          - name: groepen
+            label: Groepen met apparatuur
+            type: object
+            list: { min: 1, collapsible: { collapsed: true, summary: "{titel}" } }
+            description: "Gebruik meerdere groepen als je onderverdeling wilt (bijv. Instrumentmicrofoons / Zangmicrofoons). Laat de groepstitel leeg als er maar één groep is."
+            fields:
+              - { name: titel, label: Groepstitel (mag leeg), type: string }
+              - name: items
+                label: Apparatuur
+                type: object
+                list: { collapsible: { collapsed: true, summary: "{merk} {naam}" } }
+                fields:
+                  - { name: merk, label: Merk, type: string, required: true }
+                  - { name: naam, label: Type / naam, type: string, required: true }
+                  - { name: omschrijving, label: Omschrijving, type: string }
+          - { name: opmerking, label: Opmerking in rood kader (mag leeg), type: string, description: "Gebruik **tekst** voor vetgedrukt." }
+          - { name: sfeerfoto, label: Sfeerfoto onder de lijst (mag leeg), component: afbeelding }
+          - { name: sfeerfoto_alt, label: Omschrijving sfeerfoto, type: string }
+          - { name: sfeerfoto_bijschrift, label: Bijschrift sfeerfoto, type: string }
+
+  - name: over-ons
+    label: Over ons
+    type: file
+    path: content/over-ons.yml
+    format: yaml
+    fields:
+      - { name: seo, component: seo }
+      - name: intro
+        label: Paginakop
+        type: object
+        fields:
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: lead, label: Inleiding, type: text }
+      - name: verhaal
+        label: Het verhaal
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: lead, label: Inleidende alinea (groter), type: text }
+          - { name: tekst_boven, label: Tekst boven het citaat, type: rich-text, options: { media: false } }
+          - { name: quote, label: Citaat, type: string }
+          - { name: quote_auteur, label: Naam bij het citaat, type: string }
+          - { name: tekst_onder, label: Tekst onder het citaat, type: rich-text, options: { media: false } }
+          - { name: afbeelding, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+          - { name: bijschrift, label: Bijschrift onder de foto, type: string }
+      - name: waarden
+        label: Waar we voor staan
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - name: items
+            label: Kernwaarden
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{titel}" } }
+            fields:
+              - { name: titel, label: Titel, type: string, required: true }
+              - { name: tekst, label: Tekst, type: text }
+      - name: afsluiting
+        label: Afsluitend blok
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: rich-text, options: { media: false } }
+          - { name: knop, label: Tekst op de knop, type: string }
+          - { name: afbeelding, component: afbeelding }
+          - { name: afbeelding_alt, label: Omschrijving van de foto, type: string }
+
+  - name: contact
+    label: Contact
+    type: file
+    path: content/contact.yml
+    format: yaml
+    fields:
+      - { name: seo, component: seo }
+      - name: intro
+        label: Paginakop
+        type: object
+        fields:
+          - { name: titel, label: Titel, type: string, required: true }
+          - { name: lead, label: Inleiding, type: text }
+      - name: formulier
+        label: Contactformulier
+        type: object
+        fields:
+          - { name: titel, label: Titel boven het formulier, type: string }
+          - { name: hint, label: Toelichting, type: string }
+          - { name: soorten, label: Keuzes bij 'Soort evenement', type: string, list: true }
+          - { name: bericht_placeholder, label: Voorbeeldtekst in het berichtveld, type: string }
+          - { name: knop, label: Tekst op de verzendknop, type: string }
+      - name: tips
+        label: Blok met tips
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine kop, type: string }
+          - { name: titel, label: Titel, type: string }
+          - { name: tekst, label: Tekst, type: text }
+          - name: items
+            label: Tips
+            type: object
+            list: { max: 4, collapsible: { collapsed: true, summary: "{titel}" } }
+            fields:
+              - { name: icoon, component: icoon }
+              - { name: titel, label: Titel, type: string, required: true }
+              - { name: tekst, label: Tekst, type: text }

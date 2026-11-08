@@ -1,0 +1,58 @@
+seo:
+  titel: Over ons | Robin Vos, Rovo-sound geluidstechniek Hasselt
+  omschrijving: >-
+    Rovo-sound is het bedrijf van Robin Vos, ontstaan uit pure passie voor
+    muziek en techniek. Betaalbaar geluid voor iedereen, ook voor beginnende
+    bands. Afspraak is afspraak, zonder bijkomende kosten.
+intro:
+  titel: Over ons
+  lead: >-
+    Rovo-sound is ontstaan uit pure passie voor muziek en techniek. Wij zorgen
+    dat jouw muziek in de zaal overkomt zoals je het bedoelt.
+verhaal:
+  eyebrow: Het verhaal
+  titel: Hallo, ik ben Robin Vos
+  lead: >-
+    Ik heb altijd voor mijn droom gestreden om een eigen bedrijf in de
+    geluidstechniek te realiseren. Betaalbaar voor iedereen is altijd mijn wens
+    geweest, dus ook voor beginnende bandjes en muzikanten.
+  tekst_boven: >-
+    Niets is zo vervelend als je met je band mooie muziek speelt, maar het in
+    de zaal niet zo overkomt zoals je dat wilt. Ik ben een groot
+    muziekliefhebber met een brede smaak, en ik kan ook genieten van een mooi
+    theaterstuk of een toneelvoorstelling.
+  quote: "Mijn motto: afspraak is afspraak, zonder bijkomende kosten."
+  quote_auteur: Robin Vos
+  tekst_onder: |
+    Het bedrijf is ontstaan uit pure passie voor muziek en techniek. Na jaren piano- en gitaarles bleek mijn passie in de techniek te liggen. Ik ben me gaan focussen op alles wat erbij komt kijken als je een live optreden goed wilt laten klinken.
+
+    Theatertechniek heeft me altijd gefascineerd. Inmiddels heb ik meerdere cursussen en trainingen gevolgd, maar ik ben van mening dat een mens nooit uitgeleerd is. Daarom blijf ik investeren in mijn kennis en kunde, met cursussen, trainingen en in de geluidsinstallatie zelf.
+  afbeelding: /assets/img/publiek-muziektent.webp
+  afbeelding_alt: Publiek voor een muziektent met band tijdens een zonnig buitenoptreden
+  bijschrift: Een buitenoptreden met Rovo-sound achter de mixer.
+waarden:
+  eyebrow: Waar we voor staan
+  titel: Zo werken wij
+  items:
+    - titel: Betaalbaar
+      tekst: Goed geluid moet voor iedereen bereikbaar zijn, ook met een klein budget.
+    - titel: Afspraak is afspraak
+      tekst: Een duidelijke prijs vooraf en geen bijkomende kosten achteraf.
+    - titel: Passie voor muziek
+      tekst: Zelf muzikant geweest, dus we weten wat een band op het podium nodig heeft.
+    - titel: Blijven leren
+      tekst: "Cursussen, trainingen en nieuwe technieken: een mens is nooit uitgeleerd."
+    - titel: Blijven investeren
+      tekst: We investeren voortdurend in ons materiaal, zodat we je steeds meer kunnen bieden.
+    - titel: Persoonlijk
+      tekst: Je hebt contact met één persoon, van de eerste aanvraag tot de afbouw.
+afsluiting:
+  eyebrow: Nieuwsgierig wat Rovo-sound doet?
+  titel: We gaan graag met je in gesprek
+  tekst: >-
+    Over de mogelijkheden om jouw evenement geluidstechnisch tot een groot
+    succes te maken. Voor meer informatie neem je contact met ons op via
+    e-mail, bel je ons of gebruik je het contactformulier.
+  knop: Ga naar contact
+  afbeelding: /assets/img/band-muziektent.webp
+  afbeelding_alt: Band speelt voor publiek in een muziektent

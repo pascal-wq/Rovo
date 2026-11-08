@@ -1,0 +1,16 @@
+{
+  "name": "rovo-sound-website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Website van Rovo-sound: statische site, gegenereerd uit de bestanden in content/",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "node build.js && npx --yes serve dist",
+    "watch": "node build.js --watch"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "marked": "^15.0.0",
+    "sharp": "^0.33.5"
+  }
+}

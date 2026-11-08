@@ -1,0 +1,41 @@
+seo:
+  titel: Contact | Offerte aanvragen | Rovo-sound Hasselt
+  omschrijving: >-
+    Neem contact op met Rovo-sound voor een vrijblijvende offerte: bel
+    06 - 15 50 92 05, mail naar info@rovo-sound.nl of gebruik het
+    contactformulier. Het Kerspel 18, 8061 BE Hasselt.
+intro:
+  titel: Contact met Rovo-sound
+  lead: >-
+    We gaan graag met je in gesprek over de mogelijkheden om jouw evenement
+    geluidstechnisch tot een groot succes te maken. Bel, mail of vul het
+    formulier in.
+formulier:
+  titel: Vraag een vrijblijvende offerte aan
+  hint: Hoe meer je ons vertelt over je optreden of evenement, hoe beter we kunnen adviseren.
+  soorten:
+    - Bandoptreden
+    - Horeca / café
+    - Evenement / feest
+    - Bruiloft
+    - Theater / voorstelling
+    - Anders
+  bericht_placeholder: "Bijvoorbeeld: bezetting van de band, aantal gasten, binnen of buiten, en wat je van ons verwacht."
+  knop: Verstuur aanvraag
+tips:
+  eyebrow: Tip
+  titel: Wat vermeld je in je aanvraag?
+  tekst: Met deze gegevens kunnen we je meteen een passend voorstel doen.
+  items:
+    - icoon: clock
+      titel: Datum & tijden
+      tekst: Wanneer is het, en hoe laat wil je dat alles staat?
+    - icoon: pin
+      titel: Locatie
+      tekst: Binnen of buiten, hoe groot is de ruimte en hoeveel mensen verwacht je?
+    - icoon: music
+      titel: Bezetting
+      tekst: Welke instrumenten en hoeveel zangers? Zo weten we welke microfoons mee moeten.
+    - icoon: mixer
+      titel: Wensen
+      tekst: Alleen apparatuur of inclusief technicus? Eigen monitormix? Laat het weten.
